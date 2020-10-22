@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script></script><script src="./js/settings.js"></script><meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./stats.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div id="game">
+        <h1 id='start_playing' onclick="start_game()">Start Playing</h1>
+        <div id="grid"><div id="player"></div>
+        <div id="enemy"></div></div>
+        <div class="clear"></div>
+    </div>
+
+    <section id="stats">
+
+        <div id="facts">
+            <h1>Speed Runner</h1>
+            <h3>Level 1</h3>
+            <h3>Time: 0.0</h3>
+            <h3>Dificulty: Normal</h3>
+        </div>
+
+        <div id="settings">
+            
+            <label for="cars">Choose Difficulty</label>
+            <br>
+            <br>
+            <select name="difficulty" id="difficulty-select">
+              <option value="easy">Easy</option>
+              <option value="chill">Chill</option>
+              <option value="normal">Normal</option>
+              <option value="hard">Hard</option>
+            </select> 
+            <input type="button" value="Save" id='save_btn'>
+        </div>
+    </section>
+
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

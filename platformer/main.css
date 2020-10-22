@@ -1,0 +1,97 @@
+:root {
+    --bg-color: rgb(29, 33, 44);
+    --player-color: #fcfcfc;
+    --enemy-color:  rgb(209, 209, 209);
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+#game {
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    background: rgb(45, 61, 78);
+    height: 250px;
+    width: 1000px;
+    z-index: 11;
+}
+
+#player {
+    background-color: var(--player-color);
+    height: 25px;
+    width: 25px;
+    display: none;
+    position: absolute;
+    top: 225px;
+    left: 25px;
+}
+
+#enemy {
+    background-color: var(--enemy-color);
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 225px;
+}
+
+.move_enemy {
+    animation: enemy_move 1.8s infinite linear;
+}
+
+.clear {
+    clear: both;
+}
+
+.jump {
+    animation: jump 400ms;
+}
+
+/* Keyframes */
+
+@keyframes jump {
+    0%{top: 225px;}
+    19%{top: 140px;}
+    35%{top: 100px;}
+    60%{top: 100px;}
+    100%{top: 220px;}
+}
+
+@keyframes enemy_move  {
+    0%{left: 1000px;}
+    100%{left: -15px;}   
+}
+
+#start_playing {
+    color: var(--bg-color);
+    position: absolute;
+    padding: 12px 25px;
+    min-height: 60px;
+    min-width: 200px;
+    border-radius: 6px;
+    top: 95px;
+    left: 400px;
+    background: white;
+    transition: color .3s, background-color .5s;
+}
+
+
+#start_playing:hover {
+    color: cornflowerblue;
+    position: absolute;
+    background-color: var(--bg-color);
+}
+
+.hidden {
+    display: none;
+}

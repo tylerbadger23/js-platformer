@@ -1,0 +1,48 @@
+:root {
+    --primary-color: rgb(238, 238, 238);
+}
+
+#stats {
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    width: 1000px;
+    margin: auto;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-weight: 400;
+    color: cornflowerblue;
+    font-size: 20px;
+    padding: 2px 0px;
+}
+
+#settings {
+    float: right;
+}
+
+#facts {
+    float: left;
+}
+
+#save_btn {
+    color:  white;
+    cursor: pointer;
+    background: cornflowerblue;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: color .5s, background-color .3s;
+}
+
+#save_btn:hover {
+    color: cornflowerblue;
+    background-color: white;
+}
