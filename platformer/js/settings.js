@@ -1,13 +1,15 @@
 // Player & Enemy
-let enemy_move_speed = 1; // 1second default
-let jump_speed = 400; // ms
+let enemy_move_speed = localStorage.getItem("enemy_speed") || 1300;
+let jump_speed = localStorage.getItem("player_height") || 600;
 let canJump = true; // player is Grounded
 
 let playing_game = false
-let should_countdown = true;
+let showing_start_screen = true
 let num_plays = 0;
 // Score & Game  
 
-let score, level
+let score
+let difficulty_level = localStorage.getItem("dificulty") || "easy";
 
-let dificulty = 1;
+
+console.log(`${enemy_move_speed} + ${jump_speed} + ${difficulty_level}`)
